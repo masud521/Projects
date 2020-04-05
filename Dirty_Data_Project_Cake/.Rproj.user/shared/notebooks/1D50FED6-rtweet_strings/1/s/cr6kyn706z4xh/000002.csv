@@ -1,0 +1,8 @@
+"0","```r
+
+code_clan_tweets %>%
+  mutate(media_type2 = replace_na(media_type, \"text\")) %>%
+  group_by(media_type2) %>%
+  summarise(favourite_count_total = sum(favorite_count)) %>%
+  arrange(desc(favourite_count_total))
+```"

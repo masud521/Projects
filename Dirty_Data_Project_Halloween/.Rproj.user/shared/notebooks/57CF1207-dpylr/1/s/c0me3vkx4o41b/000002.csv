@@ -1,0 +1,17 @@
+"0","```r
+salaries <- read_csv(\"data/salaries.csv\")
+
+```"
+"1","Parsed with column specification:
+cols(
+  beginning_salary = [32mcol_double()[39m,
+  gender = [31mcol_character()[39m,
+  job_seniority = [32mcol_double()[39m,
+  age = [32mcol_double()[39m,
+  current_salary = [32mcol_double()[39m,
+  educational_level = [32mcol_double()[39m,
+  work_experience = [32mcol_double()[39m,
+  employment_category = [31mcol_character()[39m,
+  is_white = [31mcol_character()[39m
+)
+"

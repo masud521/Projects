@@ -1,0 +1,9 @@
+"0","```r
+
+# For sponge cake, how many cups of ingredients are used in total?
+
+cake_ingredients %>%
+  filter(cake == \"sponge\") %>%
+  filter(measure == \"cup\") %>%
+  summarise(total_cups = sum(quantity))
+```"

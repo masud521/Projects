@@ -1,0 +1,5 @@
+"0","# What is the total number of candy ratings given across the three years"
+"0",""
+"0","halloween_candies %>%"
+"0","  drop_na(ratings)%>%"
+"0","  summarise(candy_ratings = n())"

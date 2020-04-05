@@ -1,0 +1,14 @@
+"0","```r
+
+names(drinks_content)
+```"
+"1"," [1] \"Beverage_category\"       \"Beverage\"               
+ [3] \"Beverage_prep\"           \"Calories\"               
+ [5] \"Total Fat (g)\"           \"Trans Fat (g)\"          
+ [7] \"Saturated Fat (g)\"       \"Sodium (mg)\"            
+ [9] \"Total Carbohydrates (g)\" \"Cholesterol (mg)\"       
+[11] \"Dietary Fibre (g)\"       \"Sugars (g)\"             
+[13] \"Protein (g)\"             \"Vitamin A (% DV)\"       
+[15] \"Vitamin C (% DV)\"        \"Calcium (% DV)\"         
+[17] \"Iron (% DV)\"             \"Caffeine (mg)\"          
+"

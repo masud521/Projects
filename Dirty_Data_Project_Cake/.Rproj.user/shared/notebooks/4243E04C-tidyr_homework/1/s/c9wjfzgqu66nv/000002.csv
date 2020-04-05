@@ -1,0 +1,12 @@
+"0","```r
+
+# look at what different missing values we have
+missing_gov <- women_in_gov2 %>% 
+  select(prop_women) %>% 
+  filter(is.na(prop_women))
+
+# check how many different ones we have
+unique(missing_gov$prop_women)
+```"
+"1","[1] NA
+"

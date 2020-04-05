@@ -1,0 +1,9 @@
+"0","```r
+candy %>%
+  filter(!is.na(rating)) %>%
+  group_by(rating, candy) %>%
+  summarise(
+    count = n()
+  ) %>%
+  filter(count == max(count))
+```"

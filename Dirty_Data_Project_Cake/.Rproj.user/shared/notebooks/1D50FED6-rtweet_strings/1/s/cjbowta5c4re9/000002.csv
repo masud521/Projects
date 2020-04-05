@@ -1,0 +1,5 @@
+"0","```r
+
+codeclan_all <- left_join(code_clan_tweets,code_clan_info, by = \"tweet_id\")
+
+```"

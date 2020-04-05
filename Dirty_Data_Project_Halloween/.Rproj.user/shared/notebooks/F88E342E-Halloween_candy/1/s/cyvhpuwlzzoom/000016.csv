@@ -1,0 +1,6 @@
+"0","# What was the most popular candy bar by this rating system for each gender in the dataset?"
+"0",""
+"0","halloween_candies %>%"
+"0","  group_by(gender, candies) %>%"
+"0","  summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %>%"
+"0","  filter(avg_rating == max(avg_rating))"

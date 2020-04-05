@@ -1,0 +1,9 @@
+{
+    "path" : "~/CodeClan/Dirty_Data_Project/raw_data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

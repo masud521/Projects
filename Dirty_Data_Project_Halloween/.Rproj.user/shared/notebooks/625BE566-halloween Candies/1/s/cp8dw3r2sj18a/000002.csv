@@ -1,0 +1,8 @@
+"0","# What was the most popular candy bar by this rating for people in US, Canada, UK and all other countries"
+"0",""
+"0","halloween_candies %>%"
+"0","mutate(country = if_else(country %in% c(""usa"", ""canada"", ""uk""), country, ""other"")) %>%"
+"0","filter(year != 2015) %>%"
+"0","group_by(country, candies) %>%"
+"0","summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %>%"
+"0","filter(avg_rating == max(avg_rating))"

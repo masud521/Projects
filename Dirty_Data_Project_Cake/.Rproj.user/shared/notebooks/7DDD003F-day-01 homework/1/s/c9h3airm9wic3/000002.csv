@@ -1,0 +1,11 @@
+"0","```r
+
+# group the data 
+drinks_grouped <- group_by(drink_calories, Beverage_prep)
+
+# summarise the data 
+drinks_summary <- summarise(drinks_grouped, mean_cal = mean(Calories))
+
+# arrange in descending order 
+arrange(drinks_summary,desc(mean_cal))
+```"

@@ -1,0 +1,9 @@
+"0","```r
+
+favorite_count_tweet <- summary(code_clan_tweets$favorite_count)
+
+favorite_count
+```"
+"1","   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   0.000   0.000   1.906   2.000  34.000 
+"

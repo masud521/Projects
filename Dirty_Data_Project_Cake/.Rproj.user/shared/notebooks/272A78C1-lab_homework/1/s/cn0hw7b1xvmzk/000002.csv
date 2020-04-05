@@ -1,0 +1,14 @@
+"0","```r
+
+all_description <-
+  
+facial_recognition %>%
+  pivot_longer(
+    cols = d1:d3,
+    names_to = \"description_number\",
+    values_to = \"description\"
+  
+  )
+
+
+```"

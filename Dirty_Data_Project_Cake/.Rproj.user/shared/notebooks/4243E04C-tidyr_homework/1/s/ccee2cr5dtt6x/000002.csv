@@ -1,0 +1,5 @@
+"0","```r
+
+# check that these columns have useless info in them
+women_in_gov_clean %>% distinct(x64)
+```"

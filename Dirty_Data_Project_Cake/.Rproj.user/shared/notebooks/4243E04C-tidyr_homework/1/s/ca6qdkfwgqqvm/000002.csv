@@ -1,0 +1,11 @@
+"0","```r
+
+women_in_gov2 <-
+  
+  women_in_gov2 %>%
+  pivot_longer(cols = starts_with(\"x\"),
+               names_to = \"year\",
+               values_to = \"prop_women\")
+
+
+```"

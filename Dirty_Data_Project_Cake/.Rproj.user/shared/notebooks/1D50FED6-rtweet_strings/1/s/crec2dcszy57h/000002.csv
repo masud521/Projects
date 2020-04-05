@@ -1,0 +1,8 @@
+"0","```r
+
+names(code_clan_info)
+```"
+"1"," [1] \"tweet_id\"           \"status_url\"         \"name\"               \"location\"           \"description\"       
+ [6] \"url\"                \"protected\"          \"followers_count\"    \"friends_count\"      \"listed_count\"      
+[11] \"statuses_count\"     \"favourites_count\"   \"account_created_at\" \"verified\"           \"profile_url\"       
+"

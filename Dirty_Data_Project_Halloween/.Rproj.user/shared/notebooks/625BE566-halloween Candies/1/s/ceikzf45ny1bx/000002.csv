@@ -1,0 +1,4 @@
+"0","halloween_candies <-"
+"0","  halloween_candies %>%"
+"0","  mutate(ratings_numeric = recode(ratings, joy = 1, despair = -1, meh = 0))"
+"0",""

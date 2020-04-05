@@ -1,0 +1,6 @@
+"0","```r
+
+women_in_gov <- read_csv(\"data/women_in_gov.csv\", skip = 4)
+
+
+```"

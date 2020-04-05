@@ -1,0 +1,5 @@
+"0","```r
+
+code_clan_tweets %>%
+  summarise(avg_tweet_lenght = mean(display_text_width))
+```"

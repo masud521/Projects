@@ -1,0 +1,17 @@
+"0","```r
+
+facial_recognition <- read_csv(\"data/face_descriptions.csv\")
+```"
+"1","Parsed with column specification:
+cols(
+  .default = col_character(),
+  user_id = [32mcol_double()[39m,
+  age = [32mcol_double()[39m
+)
+See spec(...) for full column specifications.
+"
+"0","```r
+dim(facial_recognition)
+```"
+"1","[1] 220  53
+"

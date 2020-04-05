@@ -1,0 +1,11 @@
+"0","```r
+
+summary(drinks_content$Calories)
+```"
+"1","   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    0.0   120.0   185.0   193.9   260.0   510.0 
+"
+"0","```r
+hist(drinks_content$Calories)
+
+```"

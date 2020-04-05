@@ -1,0 +1,7 @@
+"0","```r
+library(tidyverse)
+library(here)
+
+candy <- read_csv(here(\"clean_data/candy_clean.csv\"),
+  col_types = cols(gender = col_character(), country = col_character()))
+```"

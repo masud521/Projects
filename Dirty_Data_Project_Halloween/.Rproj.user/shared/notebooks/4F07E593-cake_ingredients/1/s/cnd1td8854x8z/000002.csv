@@ -1,0 +1,9 @@
+"0","```r
+# Which ingredients are used only once?
+
+cake_ingredients %>%
+  group_by(ingredient) %>%
+  summarise(num_ingredients = n()) %>%
+  filter(num_ingredients == min(num_ingredients)) %>%
+  select(ingredient)
+```"

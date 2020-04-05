@@ -1,0 +1,7 @@
+"0","```r
+
+# remove the redundant columns
+women_in_gov2 <- women_in_gov_clean %>% 
+  select(-indicator_name, -indicator_code, -x64)
+
+```"

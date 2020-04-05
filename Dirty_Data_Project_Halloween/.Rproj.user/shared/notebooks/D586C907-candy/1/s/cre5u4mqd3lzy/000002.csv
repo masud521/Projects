@@ -1,0 +1,6 @@
+"0","```r
+candy %>%
+  filter(candy == \"starburst\") %>%
+  filter(rating == \"despair\") %>%
+  summarise(id_count = n_distinct(person_id))
+```"

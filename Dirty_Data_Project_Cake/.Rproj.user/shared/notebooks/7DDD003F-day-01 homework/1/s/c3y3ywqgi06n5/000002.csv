@@ -1,0 +1,4 @@
+"0","```r
+
+boxplot(drinks_content$Calories)
+```"

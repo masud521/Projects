@@ -1,0 +1,7 @@
+"0","# How many people rated Starburst as despair"
+"0",""
+"0","halloween_candies %>%"
+"0","  drop_na(ratings) %>%"
+"0","  group_by(candies, ratings) %>%"
+"0","  filter(candies == 'starburst' & ratings == 'despair') %>%"
+"0","  summarise(starburst_ratings = n())"

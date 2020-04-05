@@ -1,0 +1,5 @@
+"0","```r
+candy %>%
+  group_by(going_out) %>%
+  summarise(avg_age = mean(age, na.rm = TRUE))
+```"

@@ -1,0 +1,6 @@
+"0","```r
+
+
+drinks_grouped <- group_by(drink_calories, Beverage_prep)
+
+```"

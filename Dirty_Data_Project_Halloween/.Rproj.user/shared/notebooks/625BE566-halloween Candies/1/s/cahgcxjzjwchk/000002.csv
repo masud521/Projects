@@ -1,0 +1,8 @@
+"0","# For each of joy, despair and meh, which candy bar revived the most of these ratings?"
+"0",""
+"0","  "
+"0","halloween_candies %>%"
+"0","  drop_na(ratings) %>%"
+"0","  group_by(ratings, candies) %>%"
+"0","  summarise(candy_ratings = n()) %>%"
+"0","  filter(candy_ratings == max(candy_ratings))"

@@ -1,0 +1,7 @@
+"0","```r
+
+code_clan_tweets %>%
+  filter(is_quote == FALSE) %>%
+  group_by(source) %>%
+  summarise(average_retweet = mean(retweet_count))
+```"

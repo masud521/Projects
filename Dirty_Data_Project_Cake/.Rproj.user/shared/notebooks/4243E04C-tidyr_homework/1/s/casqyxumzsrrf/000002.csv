@@ -1,0 +1,6 @@
+"0","```r
+
+# Question 6. Use a box plot to see if we have outliers in the proportion column
+ggplot(women_in_gov, aes(x = \"prop\", y = prop_women)) +
+    geom_boxplot()
+```"

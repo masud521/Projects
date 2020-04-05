@@ -1,0 +1,15 @@
+"0","```r
+
+above_average_calories <- drink_calories %>%
+  
+  group_by(Beverage_prep) %>%
+  
+  mutate(group_mean_cals = mean(Calories)) %>% 
+  #this line isn't necessary but can be helpful in understanding what the filter line is 
+  
+  select(Beverage, Beverage_prep, Calories, group_mean_cals) %>%
+  
+  filter(Calories > mean(Calories))
+
+above_average_calories
+```"

@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585319318369.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1946091071",
+    "id" : "FB3C6949",
+    "lastKnownWriteTime" : 1585320037,
+    "last_content_update" : 1585320037707,
+    "path" : "~/CodeClan/codeclan_homework_Masood/week_04/Dirty_Data_Project_Cake/documentation_and_analysis/Cake ingredients.Rmd",
+    "project_path" : "documentation_and_analysis/Cake ingredients.Rmd",
+    "properties" : {
+        "cursorPosition" : "128,93",
+        "last_setup_crc32" : "93AB8E8Bbb338d19",
+        "scrollLine" : "103",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

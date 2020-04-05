@@ -1,0 +1,6 @@
+"0",""
+"0","# How many ingredients are measured in teaspoons?"
+"0",""
+"0","cake_ingredients %>%"
+"0","  filter(measure == ""teaspoon"") %>%"
+"0","  summarise(num_measure_teaspoon = n_distinct(ingredient))"

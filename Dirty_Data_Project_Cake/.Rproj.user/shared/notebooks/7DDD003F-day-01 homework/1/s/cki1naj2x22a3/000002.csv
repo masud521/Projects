@@ -1,0 +1,5 @@
+"0","```r
+
+boxplot(drinks_content_outlier$Calories)
+
+```"

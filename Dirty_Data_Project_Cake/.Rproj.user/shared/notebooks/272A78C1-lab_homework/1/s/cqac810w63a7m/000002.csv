@@ -1,0 +1,15 @@
+"0","```r
+
+# group the data
+all_description <-
+  
+all_description %>%
+  group_by(description)
+head(all_description)
+
+# summarise and generate a count for each 
+summarise_data <- summarise(all_description, n = n())
+
+summarise_data
+
+```"

@@ -1,0 +1,9 @@
+"0","```r
+
+drink_calories <- select(drinks_content, Beverage_category, Beverage, Beverage_prep, Calories)
+
+# check for NA's
+
+is.na(drink_calories$Calories)
+
+```"

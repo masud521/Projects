@@ -1,0 +1,6 @@
+"0","```r
+
+ names(cake_ingredients)
+```"
+"1","[1] \"cake\"       \"quantity\"   \"ingredient\" \"measure\"   
+"

@@ -1,0 +1,8 @@
+"0","```r
+# Which cake has the most cocoa in it?
+
+cake_ingredients %>%
+  filter(ingredient == \"cocoa\") %>%
+  filter(quantity == max(quantity)) %>%
+  select(cake)
+```"

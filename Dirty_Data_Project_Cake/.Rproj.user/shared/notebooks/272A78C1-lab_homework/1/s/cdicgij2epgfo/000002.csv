@@ -1,0 +1,11 @@
+"0","```r
+
+facial_recognition <-
+facial_recognition %>%
+  pivot_longer(
+    cols = starts_with(\"t\"),
+    names_to = \"face_id\",
+    values_to = \"Description\"
+  )
+
+```"

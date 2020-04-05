@@ -1,0 +1,12 @@
+"0","```r
+# 8 : create a variable which has all the hashtags in lowercase for analysis
+
+
+codeclan_hashtags <- codeclan_all%>% 
+  select(tweet_id, hashtags) %>%
+  mutate(lowcase_hashtag = str_to_lower(hashtags)) %>%
+  select(-hashtags) %>%
+  drop_na(lowcase_hashtag)
+
+codeclan_hashtags
+```"

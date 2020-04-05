@@ -1,0 +1,8 @@
+"0","```r
+
+outliers <- boxplot(drinks_content$Calories, plot = FALSE)$out
+
+print(outliers)
+```"
+"1","[1] 510
+"

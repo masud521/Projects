@@ -1,0 +1,6 @@
+"0","```r
+
+drink_calories <- mutate(classic_espresso_drinks, calorie_diff = 135 - Calories)
+     
+
+```"

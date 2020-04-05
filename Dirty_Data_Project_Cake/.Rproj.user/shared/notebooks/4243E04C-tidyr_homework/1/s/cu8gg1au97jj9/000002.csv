@@ -1,0 +1,8 @@
+"0","```r
+
+# There are lots of different options here. If it was me, I would probably just drop the values by doing this:
+
+women_in_gov <- women_in_gov2 %>%
+  drop_na()
+
+```"

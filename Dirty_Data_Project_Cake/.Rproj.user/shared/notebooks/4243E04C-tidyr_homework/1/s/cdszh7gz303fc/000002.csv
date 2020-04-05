@@ -1,0 +1,6 @@
+"0","```r
+# counting missing values
+
+women_in_gov2 %>%
+  summarise(count = sum(is.na(prop_women)))
+```"

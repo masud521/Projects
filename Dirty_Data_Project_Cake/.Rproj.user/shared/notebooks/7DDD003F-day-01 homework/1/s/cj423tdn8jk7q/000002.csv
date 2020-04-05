@@ -1,0 +1,11 @@
+"0","```r
+
+most_calories <- drink_calories %>%
+                  arrange(Calories) %>%
+                  mutate(ranking = min_rank(desc(Calories))) %>%
+                  filter(ranking <=2)
+
+most_calories
+
+
+```"

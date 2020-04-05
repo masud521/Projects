@@ -1,0 +1,11 @@
+"0","```r
+all_description <-
+
+all_description %>%
+  
+ filter(!is.na(description),
+         nchar(description) > 1)
+
+all_description
+
+```"

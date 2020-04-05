@@ -1,0 +1,5 @@
+"0","```r
+ggplot(code_clan_tweets, aes(x = \"favorite_count\", favorite_count)) + 
+  geom_boxplot()
+
+```"

@@ -1,0 +1,15 @@
+"0","# Load data from first csv file "
+"0",""
+"0","halloween_candies <- "
+"0","  read_csv(here(""clean_data/halloween_candies.csv""), guess_max = 1000001)"
+"2","Parsed with column specification:
+cols(
+  age = [32mcol_double()[39m,
+  going_out = [31mcol_character()[39m,
+  candies = [31mcol_character()[39m,
+  ratings = [31mcol_character()[39m,
+  country = [31mcol_character()[39m,
+  gender = [31mcol_character()[39m,
+  year = [32mcol_double()[39m
+)
+"

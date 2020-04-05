@@ -1,0 +1,13 @@
+"0","```r
+
+drink_pipe <- drinks_content %>%
+  
+              select(Beverage_category, Beverage, Beverage_prep, Calories) %>%
+              filter(Beverage_category == \"Classic Espresso Drinks\" ) %>%
+              mutate(calorie_diff = 135 - Calories) %>%
+              group_by(Beverage_prep) %>%
+
+              arrange(desc(mean_cal))
+```"
+"1","Error: object 'mean_cal' not found
+"

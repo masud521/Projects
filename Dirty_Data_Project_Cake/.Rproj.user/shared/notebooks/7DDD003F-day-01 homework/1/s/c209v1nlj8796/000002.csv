@@ -1,0 +1,4 @@
+"0","```r
+
+head(drinks_content, 5)
+```"

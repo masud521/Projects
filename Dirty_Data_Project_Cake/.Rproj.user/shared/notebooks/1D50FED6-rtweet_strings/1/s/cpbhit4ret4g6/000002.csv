@@ -1,0 +1,5 @@
+"0","```r
+
+code_clan_tweets <- read_csv(\"data/code_clan_tweets.csv\")
+
+```"

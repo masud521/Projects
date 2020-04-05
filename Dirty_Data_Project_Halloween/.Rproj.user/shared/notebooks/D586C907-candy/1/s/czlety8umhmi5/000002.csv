@@ -1,0 +1,9 @@
+"0","```r
+candy %>%
+  mutate(country = if_else(country %in% c(\"united states\", \"canada\", \"united kingdom\"), country, \"other\")) %>%
+  group_by(country, candy) %>%
+  summarise(
+    avg_rating = mean(rating_numeric, na.rm = TRUE)
+  ) %>%
+  filter(avg_rating == max(avg_rating))
+```"

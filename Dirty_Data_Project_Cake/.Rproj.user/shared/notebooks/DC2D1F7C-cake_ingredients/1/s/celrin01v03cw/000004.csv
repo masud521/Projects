@@ -1,0 +1,11 @@
+"0","# load data"
+"0",""
+"0","cake_ingredients <- read_csv(here(""clean_data/cake_ingredients_clean.csv""))"
+"2","Parsed with column specification:
+cols(
+  cake = [31mcol_character()[39m,
+  quantity = [32mcol_double()[39m,
+  ingredient = [31mcol_character()[39m,
+  measure = [31mcol_character()[39m
+)
+"

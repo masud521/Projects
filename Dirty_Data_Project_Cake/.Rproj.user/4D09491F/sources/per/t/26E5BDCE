@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585318462745.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2618635771",
+    "id" : "26E5BDCE",
+    "lastKnownWriteTime" : 1585150171,
+    "last_content_update" : 1585150171,
+    "path" : "~/CodeClan/codeclan_homework_Masood/week_04/Dirty_Data_Project_Cake/data_cleaning_scripts/Cake_ingredients.R",
+    "project_path" : "data_cleaning_scripts/Cake_ingredients.R",
+    "properties" : {
+        "cursorPosition" : "58,0",
+        "scrollLine" : "41"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

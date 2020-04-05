@@ -1,0 +1,6 @@
+"0","```r
+
+code_clan_tweets %>%
+  filter(is_quote == FALSE) %>%
+  summarise(total = sum(favorite_count))
+```"

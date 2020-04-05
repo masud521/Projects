@@ -1,0 +1,9 @@
+"0","```r
+
+  filter(cume_dist(desc(calories)) < 0.25) %>%
+  select(Beverage_category,Beverage_prep) %>%
+
+drinks_distribution
+```"
+"1","Error in desc(calories) : object 'calories' not found
+"

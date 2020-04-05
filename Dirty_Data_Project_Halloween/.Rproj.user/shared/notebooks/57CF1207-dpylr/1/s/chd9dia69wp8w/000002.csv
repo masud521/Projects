@@ -1,0 +1,9 @@
+"0","```r
+names(salaries)
+```"
+"1","[1] \"beginning_salary\"    \"gender\"             
+[3] \"job_seniority\"       \"age\"                
+[5] \"current_salary\"      \"educational_level\"  
+[7] \"work_experience\"     \"employment_category\"
+[9] \"is_white\"           
+"

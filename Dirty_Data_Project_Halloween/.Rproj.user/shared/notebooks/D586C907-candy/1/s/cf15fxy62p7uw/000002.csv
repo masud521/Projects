@@ -1,0 +1,8 @@
+"0","```r
+candy %>%
+  group_by(gender, candy) %>%
+  summarise(
+    avg_rating = mean(rating_numeric, na.rm = TRUE)
+  ) %>%
+  filter(avg_rating == max(avg_rating))
+```"

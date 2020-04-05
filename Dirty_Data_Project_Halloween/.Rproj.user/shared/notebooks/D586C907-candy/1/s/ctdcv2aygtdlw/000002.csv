@@ -1,0 +1,6 @@
+"0","```r
+candy <-
+  candy %>%
+  mutate(rating_numeric = recode(rating, joy = 1, despair = -1, meh = 0))
+
+```"

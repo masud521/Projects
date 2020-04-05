@@ -1,0 +1,9 @@
+"0","```r
+
+# Which cake has the most unique ingredients?
+
+cake_ingredients %>%
+  group_by(cake) %>%
+  summarise(num_ingredients = n()) %>%
+  filter(num_ingredients == max(num_ingredients))
+```"

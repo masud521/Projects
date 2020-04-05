@@ -1,0 +1,7 @@
+"0",""
+"0","# What was the most popular candy bar in each year"
+"0",""
+"0","halloween_candies %>%"
+"0","group_by(year, candies) %>%"
+"0","summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %>%"
+"0","filter(avg_rating == max(avg_rating))"

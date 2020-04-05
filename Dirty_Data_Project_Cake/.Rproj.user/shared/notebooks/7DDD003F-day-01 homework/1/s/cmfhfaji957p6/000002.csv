@@ -1,0 +1,4 @@
+"0","```r
+
+drinks_content[which(drinks_content$Calories %in% outliers), ]
+```"

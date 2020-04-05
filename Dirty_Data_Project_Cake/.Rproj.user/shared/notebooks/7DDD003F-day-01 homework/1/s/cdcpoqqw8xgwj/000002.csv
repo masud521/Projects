@@ -1,0 +1,8 @@
+"0","```r
+
+
+drinks_content_outlier <-
+drinks_content[-which(drinks_content$Calories %in% outliers),]
+
+
+```"
