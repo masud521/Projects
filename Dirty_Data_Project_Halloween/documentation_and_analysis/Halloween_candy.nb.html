@@ -1756,24 +1756,19 @@ summary {
 <h1>The data is in clean formt now we can use it to ananlyse</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkoZHBseXIpXG5saWJyYXJ5KHN0cmluZ3IpXG5saWJyYXJ5KHJlYWRyKVxubGlicmFyeShoZXJlKVxuXG5gYGAifQ== -->
-<pre class="r"><code>
-library(tidyverse)
-library(dplyr)
-library(stringr)
-library(readr)
-library(here)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5saWJyYXJ5KHRpZHl2ZXJzZSlcbmxpYnJhcnkoZHBseXIpXG5saWJyYXJ5KHN0cmluZ3IpXG5saWJyYXJ5KHJlYWRyKVxubGlicmFyeShoZXJlKVxuXG5gYGBcbmBgYCJ9 -->
+<p><code>r</code>r</p>
+<p>library(tidyverse) library(dplyr) library(stringr) library(readr) library(here)</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBMb2FkIGRhdGEgZnJvbSBmaXJzdCBjc3YgZmlsZSBcblxuaGFsbG93ZWVuX2NhbmRpZXMgPC0gXG4gIHJlYWRfY3N2KGhlcmUoXCJjbGVhbl9kYXRhL2hhbGxvd2Vlbl9jYW5kaWVzLmNzdlwiKSwgZ3Vlc3NfbWF4ID0gMTAwMDAwMSlcbmBgYCJ9 -->
-<pre class="r"><code># Load data from first csv file 
-
-halloween_candies &lt;- 
-  read_csv(here(&quot;clean_data/halloween_candies.csv&quot;), guess_max = 1000001)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBMb2FkIGRhdGEgZnJvbSBmaXJzdCBjc3YgZmlsZSBcblxuaGFsbG93ZWVuX2NhbmRpZXMgPC0gXG4gIHJlYWRfY3N2KGhlcmUoXFxjbGVhbl9kYXRhL2hhbGxvd2Vlbl9jYW5kaWVzLmNzdlxcKSwgZ3Vlc3NfbWF4ID0gMTAwMDAwMSlcbmBgYFxuYGBgIn0= -->
+<p><code>r</code>r # Load data from first csv file</p>
+<p>halloween_candies &lt;- read_csv(here(_data/halloween_candies.csv), guess_max = 1000001)</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBhZ2UgPSBcdTAwMWJbMzJtY29sX2RvdWJsZSgpXHUwMDFiWzM5bSxcbiAgZ29pbmdfb3V0ID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIGNhbmRpZXMgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bSxcbiAgcmF0aW5ncyA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltLFxuICBjb3VudHJ5ID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIGdlbmRlciA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltLFxuICB5ZWFyID0gXHUwMDFiWzMybWNvbF9kb3VibGUoKVx1MDAxYlszOW1cbilcbiJ9 -->
 <pre><code>Parsed with column specification:
@@ -1793,12 +1788,10 @@ cols(
 <p>Q1</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBXaGF0IGlzIHRoZSB0b3RhbCBudW1iZXIgb2YgY2FuZHkgcmF0aW5ncyBnaXZlbiBhY3Jvc3MgdGhlIHRocmVlIHllYXJzXG5cbmhhbGxvd2Vlbl9jYW5kaWVzICU+JVxuICBkcm9wX25hKHJhdGluZ3MpJT4lXG4gIHN1bW1hcmlzZShjYW5keV9yYXRpbmdzID0gbigpKVxuYGBgIn0= -->
-<pre class="r"><code># What is the total number of candy ratings given across the three years
-
-halloween_candies %&gt;%
-  drop_na(ratings)%&gt;%
-  summarise(candy_ratings = n())</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBXaGF0IGlzIHRoZSB0b3RhbCBudW1iZXIgb2YgY2FuZHkgcmF0aW5ncyBnaXZlbiBhY3Jvc3MgdGhlIHRocmVlIHllYXJzXG5cbmhhbGxvd2Vlbl9jYW5kaWVzICU+JVxuICBkcm9wX25hKHJhdGluZ3MpJT4lXG4gIHN1bW1hcmlzZShjYW5keV9yYXRpbmdzID0gbigpKVxuYGBgXG5gYGByXG5OQVxuTkFcbmBgYFxuYGBgIn0= -->
+<p><code>r</code>r # What is the total number of candy ratings given across the three years</p>
+<p>halloween_candies %&gt;% drop_na(ratings)%&gt;% summarise(candy_ratings = n()) <code></code>r NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MSwibnJvdyI6MX0sInJkZiI6Ikg0c0lBQUFBQUFBQUExMVFRUTZDTUJCYzBXckVvQ2ErQXk1ZWZJRHhBVVlUYnFZQ0toRzNwSlNvTjcvaUc3MkQyNFlhMHliZDdVNDdzenZkcnVPbEgvc0EwSWYra0NLakk3RDliaE91QUFZZUZUMFl3RmpuQjEwdkRBQVFtRHg1ZjV4SERQa3RxK2d3L3dPRGhHUDZQRWl1Y2p4WERtTXN4VDJ5TEMzcnZTaTB0RnpwcE9DVksrMm5YUEhvSklsUFZlTlFScUpVdVVBaWVYcHc1cEI3MGdGbU5lcEowakM1MUhnTmw3cEJaeGgrcHY4L3dHemQwbXM3S2RaSkRUTTg1NWpaMlF0K3pJcXVtSkpqWXpncVpZN0tPaUcwaXBSUTNMN3pFMUZZeEhpRDVndEIzSG93cndFQUFBPT0ifQ== -->
 <div data-pagedtable="false">
@@ -1807,21 +1800,15 @@ halloween_candies %&gt;%
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5gYGAifQ== -->
-<pre class="r"><code>NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q2</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBXaGF0IHdhcyB0aGUgYXZlcmFnZSBhZ2Ugb2YgcGVvcGxlIHdobyBhcmUgZ29pbmcgb3V0IHRyaWNrIG9yIHRyZWF0aW5nIGFuZCB0aGUgYXZlcmFnZSBhZ2Ugb2YgcGVvcGxlIDMuIG5vdCBnb2luZyB0cmljayBvciB0cmVhdGluZz9cblxuaGFsbG93ZWVuX2NhbmRpZXMgJT4lXG4gICBncm91cF9ieShnb2luZ19vdXQpICU+JVxuICAgc3VtbWFyaXNlKGF2Z19hZ2UgPSBtZWFuKGFnZSwgbmEucm0gPSBUUlVFKSlcbmBgYCJ9 -->
-<pre class="r"><code># What was the average age of people who are going out trick or treating and the average age of people 3. not going trick or treating?
-
-halloween_candies %&gt;%
-   group_by(going_out) %&gt;%
-   summarise(avg_age = mean(age, na.rm = TRUE))</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBXaGF0IHdhcyB0aGUgYXZlcmFnZSBhZ2Ugb2YgcGVvcGxlIHdobyBhcmUgZ29pbmcgb3V0IHRyaWNrIG9yIHRyZWF0aW5nIGFuZCB0aGUgYXZlcmFnZSBhZ2Ugb2YgcGVvcGxlIDMuIG5vdCBnb2luZyB0cmljayBvciB0cmVhdGluZz9cblxuaGFsbG93ZWVuX2NhbmRpZXMgJT4lXG4gICBncm91cF9ieShnb2luZ19vdXQpICU+JVxuICAgc3VtbWFyaXNlKGF2Z19hZ2UgPSBtZWFuKGFnZSwgbmEucm0gPSBUUlVFKSlcbmBgYFxuYGBgclxuTkFcbk5BXG5OQVxuYGBgXG5gYGAifQ== -->
+<p><code>r</code>r # What was the average age of people who are going out trick or treating and the average age of people 3. not going trick or treating?</p>
+<p>halloween_candies %&gt;% group_by(going_out) %&gt;% summarise(avg_age = mean(age, na.rm = TRUE)) <code></code>r NA NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6M30sInJkZiI6Ikg0c0lBQUFBQUFBQUErMVR1MDdETUJSMW02U2xrZnFRdXZBRElKWjJnWUdOSWg0akF3SUppU0V5anB0R0RYYmxPRUEzZHVBTCtBRVdSaVEydm9VLzZBOUF1VTdzRkZsQ2RHREVRM3p2OFQzM0Vmc2M3NTl0K21jK1FzaEJUZzIrSHBqSU96MDU3RzBqNUZiQnFTQVhOZFIrQThkZE1CVFl5Um5GUVpWeGJUbFRtc0xXbU1PQ3ZhV2d3ZDdqMGZucy9tV3dlN2MyZjN0NkhSeXNQN3h2ckQ1YjJUMkdMM055SjY5UWdJMkl4eXdLZUNZMVVNZFhVWUFqYXBOSmdsTkROcUFmWW9uN1F3RjVyZkNHNE5kOVU2K3A2dDNDQjNyK3NBTGRkRUtKbnRxQk1MWFh0WStLV0dkdTlkd2hQRWtva1Z3RUljOHVFbXFLbGpnNG43OGs2UzZTa0JFV21FZ3EvdlA4Zlo1bEwwdVJxNFpjTjY5ZFBjU2ZIaXJCTEl6aGdXbFhZQWtCcFV0NHhxU1lhcmNXVVJhV0E3aFRpcGZwdmIzb1BjcG9tdjdRZXE3Q3lzNE1vVVd1Y2hRallSZElaWE1oSGVJc2thVUd4dkhFYXNIb1l3Vm9RYUdSdk5TbnBaODZuOGlZczFSTHg3UG9GV0VCN1l3cFdZWTlNc3JZdUxjRmtKOGZGNnVwYmVlYlhiVW04c3cvcFN5S21ia2ZMOEVYTk5GT0MrU2ZxNzgvRVRFemMvcUFwbjNKSlRaeHZ2b3BHdEh6ZlFIZjU4UjZMd1VBQUE9PSJ9 -->
 <div data-pagedtable="false">
@@ -1830,25 +1817,15 @@ halloween_candies %&gt;%
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5OQVxuYGBgIn0= -->
-<pre class="r"><code>NA
-NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q3</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGb3IgZWFjaCBvZiBqb3ksIGRlc3BhaXIgYW5kIG1laCwgd2hpY2ggY2FuZHkgYmFyIHJldml2ZWQgdGhlIG1vc3Qgb2YgdGhlc2UgcmF0aW5ncz9cblxuICBcbmhhbGxvd2Vlbl9jYW5kaWVzICU+JVxuICBkcm9wX25hKHJhdGluZ3MpICU+JVxuICBncm91cF9ieShyYXRpbmdzLCBjYW5kaWVzKSAlPiVcbiAgc3VtbWFyaXNlKGNhbmR5X3JhdGluZ3MgPSBuKCkpICU+JVxuICBmaWx0ZXIoY2FuZHlfcmF0aW5ncyA9PSBtYXgoY2FuZHlfcmF0aW5ncykpXG5gYGAifQ== -->
-<pre class="r"><code># For each of joy, despair and meh, which candy bar revived the most of these ratings?
-
-  
-halloween_candies %&gt;%
-  drop_na(ratings) %&gt;%
-  group_by(ratings, candies) %&gt;%
-  summarise(candy_ratings = n()) %&gt;%
-  filter(candy_ratings == max(candy_ratings))</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBGb3IgZWFjaCBvZiBqb3ksIGRlc3BhaXIgYW5kIG1laCwgd2hpY2ggY2FuZHkgYmFyIHJldml2ZWQgdGhlIG1vc3Qgb2YgdGhlc2UgcmF0aW5ncz9cblxuICBcbmhhbGxvd2Vlbl9jYW5kaWVzICU+JVxuICBkcm9wX25hKHJhdGluZ3MpICU+JVxuICBncm91cF9ieShyYXRpbmdzLCBjYW5kaWVzKSAlPiVcbiAgc3VtbWFyaXNlKGNhbmR5X3JhdGluZ3MgPSBuKCkpICU+JVxuICBmaWx0ZXIoY2FuZHlfcmF0aW5ncyA9PSBtYXgoY2FuZHlfcmF0aW5ncykpXG5gYGBcbmBgYHJcbk5BXG5OQVxuYGBgXG5gYGAifQ== -->
+<p><code>r</code>r # For each of joy, despair and meh, which candy bar revived the most of these ratings?</p>
+<p>halloween_candies %&gt;% drop_na(ratings) %&gt;% group_by(ratings, candies) %&gt;% summarise(candy_ratings = n()) %&gt;% filter(candy_ratings == max(candy_ratings)) <code></code>r NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5jb2wiOjMsIm5yb3ciOjN9LCJyZGYiOiJINHNJQUFBQUFBQUFBMTFReTA2RU1CUzl3MnNDQ1Q0eUd6ZTZjQThiWStJSEdEL0FhREk3VXFERFZEb3RhVXRHWFBremZwZ2Y0bUNCZGpGbDBkNXp6K25oM1B2NnZIMUl0Z2tBK09CSCtneDFDZUg3MjB2MkJCQjRHcXdnZ0hpNlB6VzltWlVBVi9POUVPc2F5dzRSWWFEL3dRZGJIdkRlRVYrWGdyZVlGUTNseDBJcVVyV0d1RUZzS0hZOXBZVWtYN2d1S3NUcW9TaVJ0WTBwcDVSMHZKTWFwRXVNdTErQTJ4K0E2TjdKR2d0K3pCazZZQ3YydnZVeGp1T2ZJd3dyaXFRMEdXMHpxWkZDK1U3bzk2N2NlcDdOTDVBaXJKRVdUc2tKdGpCZEJyRWFnSlBqdWVhZElweHB5cHUyR3pwaFZzSnBYUFpzU2xGbjFiNW5iZlk0Qlo3cDVVdE43Wi9YMHkrRDBWaUZ4aXJDckNFTTIrRW9LakUxNEVKdmNCNDI3d1JoeW01R2QyV3V1RUpXbDFTYzJzNDhHNXorQVJ2VzJ1OVVBZ0FBIn0= -->
 <div data-pagedtable="false">
@@ -1857,23 +1834,15 @@ halloween_candies %&gt;%
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5gYGAifQ== -->
-<pre class="r"><code>NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q4</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBIb3cgbWFueSBwZW9wbGUgcmF0ZWQgU3RhcmJ1cnN0IGFzIGRlc3BhaXJcblxuaGFsbG93ZWVuX2NhbmRpZXMgJT4lXG4gIGRyb3BfbmEocmF0aW5ncykgJT4lXG4gIGdyb3VwX2J5KGNhbmRpZXMsIHJhdGluZ3MpICU+JVxuICBmaWx0ZXIoY2FuZGllcyA9PSAnc3RhcmJ1cnN0JyAmIHJhdGluZ3MgPT0gJ2Rlc3BhaXInKSAlPiVcbiAgc3VtbWFyaXNlKHN0YXJidXJzdF9yYXRpbmdzID0gbigpKVxuYGBgIn0= -->
-<pre class="r"><code># How many people rated Starburst as despair
-
-halloween_candies %&gt;%
-  drop_na(ratings) %&gt;%
-  group_by(candies, ratings) %&gt;%
-  filter(candies == 'starburst' &amp; ratings == 'despair') %&gt;%
-  summarise(starburst_ratings = n())</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBIb3cgbWFueSBwZW9wbGUgcmF0ZWQgU3RhcmJ1cnN0IGFzIGRlc3BhaXJcblxuaGFsbG93ZWVuX2NhbmRpZXMgJT4lXG4gIGRyb3BfbmEocmF0aW5ncykgJT4lXG4gIGdyb3VwX2J5KGNhbmRpZXMsIHJhdGluZ3MpICU+JVxuICBmaWx0ZXIoY2FuZGllcyA9PSAnc3RhcmJ1cnN0JyAmIHJhdGluZ3MgPT0gJ2Rlc3BhaXInKSAlPiVcbiAgc3VtbWFyaXNlKHN0YXJidXJzdF9yYXRpbmdzID0gbigpKVxuYGBgXG5gYGByXG5OQVxuTkFcbk5BXG5gYGBcbmBgYCJ9 -->
+<p><code>r</code>r # How many people rated Starburst as despair</p>
+<p>halloween_candies %&gt;% drop_na(ratings) %&gt;% group_by(candies, ratings) %&gt;% filter(candies == ‘starburst’ &amp; ratings == ‘despair’) %&gt;% summarise(starburst_ratings = n()) <code></code>r NA NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5jb2wiOjMsIm5yb3ciOjF9LCJyZGYiOiJINHNJQUFBQUFBQUFBMTFRYlU3RE1BejEybVZWSy9HbG5hUDlNd2x4QU1RQkVFajdoN3cyakdqRnFaSlU4SlBUY2F3Tkowc1FKRkpUK3pudlBkdVA5OXROczIwQW9JUnl4YmZnRU1UejAwTjdCN0FzT0ZuQUVtci8vK1R5T3J3RXVQNVRxSzFEczV1TmRWbWhHcVNkVUJrT0x3SU0xWGNtS2dqZnBZMjhNdkY2cEVFeEhGT0RUdEUrcFRlL2RpK3A4Rit6TnZxalM3cmV1UGppNjhRbk4rOUh0RFpydWhuUVlmZHFtTS9aTWFOVWVuSktFNU1LdndxUmtSY21BNjVtOHAwTWJmODIwNkc5OVFiblZZUVQxeEsrRkpkbnkrSVVwVVNVV2tuYUs1S3A5eEYzY296SkpVOGNCdTRtbzhpbFNSaTFuZE1PMDd1bTEyTkN3bXh3L0FGUTRWS0FBUUlBQUE9PSJ9 -->
 <div data-pagedtable="false">
@@ -1882,34 +1851,24 @@ halloween_candies %&gt;%
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5OQVxuYGBgIn0= -->
-<pre class="r"><code>NA
-NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>For the next two questions, count despair as -1, joy as +1 and meh as 0.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGFsbG93ZWVuX2NhbmRpZXMgPC1cbiAgaGFsbG93ZWVuX2NhbmRpZXMgJT4lXG4gIG11dGF0ZShyYXRpbmdzX251bWVyaWMgPSByZWNvZGUocmF0aW5ncywgam95ID0gMSwgZGVzcGFpciA9IC0xLCBtZWggPSAwKSlcblxuYGBgIn0= -->
-<pre class="r"><code>halloween_candies &lt;-
-  halloween_candies %&gt;%
-  mutate(ratings_numeric = recode(ratings, joy = 1, despair = -1, meh = 0))
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuaGFsbG93ZWVuX2NhbmRpZXMgPC1cbiAgaGFsbG93ZWVuX2NhbmRpZXMgJT4lXG4gIG11dGF0ZShyYXRpbmdzX251bWVyaWMgPSByZWNvZGUocmF0aW5ncywgam95ID0gMSwgZGVzcGFpciA9IC0xLCBtZWggPSAwKSlcblxuYGBgXG5gYGAifQ== -->
+<p><code>r</code>r halloween_candies &lt;- halloween_candies %&gt;% mutate(ratings_numeric = recode(ratings, joy = 1, despair = -1, meh = 0))</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q5</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBXaGF0IHdhcyB0aGUgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBieSB0aGlzIHJhdGluZyBzeXN0ZW0gZm9yIGVhY2ggZ2VuZGVyIGluIHRoZSBkYXRhc2V0P1xuXG5oYWxsb3dlZW5fY2FuZGllcyAlPiVcbiAgZ3JvdXBfYnkoZ2VuZGVyLCBjYW5kaWVzKSAlPiVcbiAgc3VtbWFyaXNlKGF2Z19yYXRpbmcgPSBtZWFuKHJhdGluZ3NfbnVtZXJpYywgbmEucm0gPSBUUlVFKSkgJT4lXG4gIGZpbHRlcihhdmdfcmF0aW5nID09IG1heChhdmdfcmF0aW5nKSlcbmBgYCJ9 -->
-<pre class="r"><code># What was the most popular candy bar by this rating system for each gender in the dataset?
-
-halloween_candies %&gt;%
-  group_by(gender, candies) %&gt;%
-  summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %&gt;%
-  filter(avg_rating == max(avg_rating))</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBXaGF0IHdhcyB0aGUgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBieSB0aGlzIHJhdGluZyBzeXN0ZW0gZm9yIGVhY2ggZ2VuZGVyIGluIHRoZSBkYXRhc2V0P1xuXG5oYWxsb3dlZW5fY2FuZGllcyAlPiVcbiAgZ3JvdXBfYnkoZ2VuZGVyLCBjYW5kaWVzKSAlPiVcbiAgc3VtbWFyaXNlKGF2Z19yYXRpbmcgPSBtZWFuKHJhdGluZ3NfbnVtZXJpYywgbmEucm0gPSBUUlVFKSkgJT4lXG4gIGZpbHRlcihhdmdfcmF0aW5nID09IG1heChhdmdfcmF0aW5nKSlcbmBgYFxuYGBgclxuTkFcbk5BXG5OQVxuYGBgXG5gYGAifQ== -->
+<p><code>r</code>r # What was the most popular candy bar by this rating system for each gender in the dataset?</p>
+<p>halloween_candies %&gt;% group_by(gender, candies) %&gt;% summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %&gt;% filter(avg_rating == max(avg_rating)) <code></code>r NA NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5jb2wiOjMsIm5yb3ciOjV9LCJyZGYiOiJINHNJQUFBQUFBQUFBd3R5aVREbWl1QmlZR0JnWm1CbUE1S3NRQ1lEYTJpSW02NEZBd01MRTVERHlNREN3QW1pSzREU3dtQ1ZEQXdDSUZWUUNiYTAxTnpFbkZRb1R5aFRQVVdoS0xFa0k3VklJUysvUktFNHNSSXF3NEtraWpVZnBBREk0UHdQQkdnR1NpVG1WY2FubGVia3hCZG5WcVdteENjbjVxVlV4aWNsRmcyNFBBTURIOGlkOXErckl0NXJmZDFzLzJLWFh2ZWlGN3ZzWDV2cUh0TGlpYk4vWTNDWUI0anNYemMzWE8zUW1Zc1dncXpKT1luRnhWRFB3Z1M1VWhKTEV2WFNpaEp6VTlHVWN4YmxsK3ZsQWNWQlduaUJtS2tCU0FDRDZ6ZTZ1VEJGQXVEWWdjWktlbXBlU2lyTVMrd2dQMlFDRlVFdFRTeExqd2RHVW1aZU9wRDNEODA4OXZ5Q2tzejhQS0NKVE1MZ2FFRjFNV01SbWdCL2FSN0lCU202eVJtbGVkbWdoTVBBQlphR0FGNG9teFdKelF5eGtnVTk2dGxTODlJejgrQ3BKQ2N4S1RVSHl1RURCZ2ZZbzNvRlJabDVKVENmQUVXTDlVcnlTeEpoNnJpUzgzTmdJbUMvTWZ3REFKWWZIcGJtQWdBQSJ9 -->
 <div data-pagedtable="false">
@@ -1918,24 +1877,18 @@ halloween_candies %&gt;%
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5OQVxuYGBgIn0= -->
-<pre class="r"><code>NA
-NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q6</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG4jIFdoYXQgd2FzIHRoZSBtb3N0IHBvcHVsYXIgY2FuZHkgYmFyIGluIGVhY2ggeWVhclxuXG5oYWxsb3dlZW5fY2FuZGllcyAlPiVcbmdyb3VwX2J5KHllYXIsIGNhbmRpZXMpICU+JVxuc3VtbWFyaXNlKGF2Z19yYXRpbmcgPSBtZWFuKHJhdGluZ3NfbnVtZXJpYywgbmEucm0gPSBUUlVFKSkgJT4lXG5maWx0ZXIoYXZnX3JhdGluZyA9PSBtYXgoYXZnX3JhdGluZykpXG5gYGAifQ== -->
-<pre class="r"><code>
-# What was the most popular candy bar in each year
-
-halloween_candies %&gt;%
-group_by(year, candies) %&gt;%
-summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %&gt;%
-filter(avg_rating == max(avg_rating))</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG4jIFdoYXQgd2FzIHRoZSBtb3N0IHBvcHVsYXIgY2FuZHkgYmFyIGluIGVhY2ggeWVhclxuXG5oYWxsb3dlZW5fY2FuZGllcyAlPiVcbmdyb3VwX2J5KHllYXIsIGNhbmRpZXMpICU+JVxuc3VtbWFyaXNlKGF2Z19yYXRpbmcgPSBtZWFuKHJhdGluZ3NfbnVtZXJpYywgbmEucm0gPSBUUlVFKSkgJT4lXG5maWx0ZXIoYXZnX3JhdGluZyA9PSBtYXgoYXZnX3JhdGluZykpXG5gYGBcbmBgYHJcbk5BXG5OQVxuTkFcbk5BXG5gYGBcbmBgYCJ9 -->
+<p><code>r</code>r</p>
+</div>
+<div id="what-was-the-most-popular-candy-bar-in-each-year" class="section level1">
+<h1>What was the most popular candy bar in each year</h1>
+<p>halloween_candies %&gt;% group_by(year, candies) %&gt;% summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %&gt;% filter(avg_rating == max(avg_rating)) <code></code>r NA NA NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5jb2wiOjMsIm5yb3ciOjN9LCJyZGYiOiJINHNJQUFBQUFBQUFBd3R5aVREbWl1QmlZR0JnWm1CbUE1S3NRQ1lEYTJpSW02NEZBd01MRTVERHlNREN3QW1pSzREU3dtQ1ZEQXg4SU5waGZnMUlOWVBEL0FZbzNjSUFCUUpnZFJDTkVvbDVsZkZwcFRrNThjV1pWYWtwOGNtSmVTbVY4VW1KUlJUTFE5MWgvN3JGdWs0bXc5SCsxZmJiT3lXQ2l1MWZ6M2k1U29KM1A1b0hXSk56RW91TG9ZNkRDWEtsSkpZazZxVVZKZWFtb2lubkxNb3YxOHNEaW9PMDhBSXhFOGlYLy8vLy80dHVMa3dSc3FkWktsUGhIbUFIdVRnVHFBUnFaV0paZW54UllrbG1YanFROXcvTk5QYjhncExNL0R5Z2VVeWd3R1pGY3k5akVab0FmMmtleVA0VTNlU00wcnhzWFV1UUJXQnBDT0NGc3BsUjJTQXJXZjVEaldLRkdzV1dtcGVlbVpjSzgxWk9ZbEpxRHBUREJ3d01zRGYxQ29veTgwcGdQZ0dLRnV1VjVKY2t3dFJ4SmVmbndFVEFmbVA0QndBa3NVQk5Zd0lBQUE9PSJ9 -->
 <div data-pagedtable="false">
@@ -1944,26 +1897,15 @@ filter(avg_rating == max(avg_rating))</code></pre>
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5OQVxuTkFcbmBgYCJ9 -->
-<pre class="r"><code>NA
-NA
-NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q7</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBXaGF0IHdhcyB0aGUgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBieSB0aGlzIHJhdGluZyBmb3IgcGVvcGxlIGluIFVTLCBDYW5hZGEsIFVLIGFuZCBhbGwgb3RoZXIgY291bnRyaWVzXG5cbmhhbGxvd2Vlbl9jYW5kaWVzICU+JVxubXV0YXRlKGNvdW50cnkgPSBpZl9lbHNlKGNvdW50cnkgJWluJSBjKFwidXNhXCIsIFwiY2FuYWRhXCIsIFwidWtcIiksIGNvdW50cnksIFwib3RoZXJcIikpICU+JVxuZmlsdGVyKHllYXIgIT0gMjAxNSkgJT4lXG5ncm91cF9ieShjb3VudHJ5LCBjYW5kaWVzKSAlPiVcbnN1bW1hcmlzZShhdmdfcmF0aW5nID0gbWVhbihyYXRpbmdzX251bWVyaWMsIG5hLnJtID0gVFJVRSkpICU+JVxuZmlsdGVyKGF2Z19yYXRpbmcgPT0gbWF4KGF2Z19yYXRpbmcpKVxuYGBgIn0= -->
-<pre class="r"><code># What was the most popular candy bar by this rating for people in US, Canada, UK and all other countries
-
-halloween_candies %&gt;%
-mutate(country = if_else(country %in% c(&quot;usa&quot;, &quot;canada&quot;, &quot;uk&quot;), country, &quot;other&quot;)) %&gt;%
-filter(year != 2015) %&gt;%
-group_by(country, candies) %&gt;%
-summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %&gt;%
-filter(avg_rating == max(avg_rating))</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBXaGF0IHdhcyB0aGUgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBieSB0aGlzIHJhdGluZyBmb3IgcGVvcGxlIGluIFVTLCBDYW5hZGEsIFVLIGFuZCBhbGwgb3RoZXIgY291bnRyaWVzXG5cbmhhbGxvd2Vlbl9jYW5kaWVzICU+JVxubXV0YXRlKGNvdW50cnkgPSBpZl9lbHNlKGNvdW50cnkgJWluJSBjKFxcdXNhXFwsIFxcY2FuYWRhXFwsIFxcdWtcXCksIGNvdW50cnksIFxcb3RoZXJcXCkpICU+JVxuZmlsdGVyKHllYXIgIT0gMjAxNSkgJT4lXG5ncm91cF9ieShjb3VudHJ5LCBjYW5kaWVzKSAlPiVcbnN1bW1hcmlzZShhdmdfcmF0aW5nID0gbWVhbihyYXRpbmdzX251bWVyaWMsIG5hLnJtID0gVFJVRSkpICU+JVxuZmlsdGVyKGF2Z19yYXRpbmcgPT0gbWF4KGF2Z19yYXRpbmcpKVxuYGBgXG5gYGByXG5OQVxuTkFcbmBgYFxuYGBgIn0= -->
+<p><code>r</code>r # What was the most popular candy bar by this rating for people in US, Canada, UK and all other countries</p>
+<p>halloween_candies %&gt;% mutate(country = if_else(country %in% c(, , ), country, )) %&gt;% filter(year != 2015) %&gt;% group_by(country, candies) %&gt;% summarise(avg_rating = mean(ratings_numeric, na.rm = TRUE)) %&gt;% filter(avg_rating == max(avg_rating)) <code></code>r NA NA</p>
+<pre><code></code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImdyb3VwZWRfZGYiLCJ0YmxfZGYiLCJ0YmwiLCJkYXRhLmZyYW1lIl0sIm5jb2wiOjMsIm5yb3ciOjR9LCJyZGYiOiJINHNJQUFBQUFBQUFBNDFTdlU3RE1CQjJtNlJWSTdXcXhFQjNKQkJESXlFWTJMSWdGalpFcFc3V05YSFNxSzVkT1E1UUJzUjdkR2Rpb1cvQmV6QlI4UWFvd1hGdGhMS0FKZHYzZlhmKzdpZTV2aGlmK21NZkllUWdwNlZPVDVuSUc5MWNEczhSY3BzS05KQ0xPdFY5cjl4N09oS2h2dHF1Y2JRaVlCQ0RRUjZYVXlJTWFCWXpZemxGRHJWM0EyQkxuQlNVNGp4N0lERldNdkVTVDBEODAzOFFRVDdGWEdDZEVTZGN6SFBNRTB4SkNoUkx3bUx5dHhSQ3ZhcWs4SE9rVi9neE8zNTVYcS9DemVIYm1xNk93czMrKyt2ajFhQTJDeStpa09lbUgwdjZNVWdJRWdGelVndnZDSDRYTU1WWFQ3clZYSjdVVVpibFYxM1hCdlgxbkhka08rSUZrMkw1QTFYeG1Zb3lXZUUyeFFKa3hsS0Z0alhCTmwvSWpETWwyYXcrblZjcnVTRnFSTDlnVlFueE1Kb1diRFk4T2FzeWFQOXVkWTN0L3JLZFhVNjNORnFlL1M4SVN6TkdiR3NVSm9RYTBGTUQwYTBHQzVFeGFWdFJiQjVJTHNIRytSR25sdEhOb2UwM05JdU8vYklDQUFBPSJ9 -->
 <div data-pagedtable="false">
@@ -1972,16 +1914,12 @@ filter(avg_rating == max(avg_rating))</code></pre>
   </script>
 </div>
 <!-- rnb-frame-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbk5BXG5gYGAifQ== -->
-<pre class="r"><code>NA
-NA</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiSGFsbG93ZWVuIGNhbmR5IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgojIFRhc2sgNCAtIEhhbGxvd2VlbiBDYW5keSBEYXRhCgojIFRoZSBkYXRhIGlzIGluIGNsZWFuIGZvcm10IG5vdyB3ZSBjYW4gdXNlIGl0IHRvIGFuYW5seXNlIAoKCmBgYHtyfQoKbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkoZHBseXIpCmxpYnJhcnkoc3RyaW5ncikKbGlicmFyeShyZWFkcikKbGlicmFyeShoZXJlKQoKYGBgCgoKCmBgYHtyfQojIExvYWQgZGF0YSBmcm9tIGZpcnN0IGNzdiBmaWxlIAoKaGFsbG93ZWVuX2NhbmRpZXMgPC0gCiAgcmVhZF9jc3YoaGVyZSgiY2xlYW5fZGF0YS9oYWxsb3dlZW5fY2FuZGllcy5jc3YiKSwgZ3Vlc3NfbWF4ID0gMTAwMDAwMSkKCgoKYGBgCgoKCgoxLjQuMiBBbmFseXNpcyBxdWVzdGlvbnMKClExCgpgYGB7cn0KIyBXaGF0IGlzIHRoZSB0b3RhbCBudW1iZXIgb2YgY2FuZHkgcmF0aW5ncyBnaXZlbiBhY3Jvc3MgdGhlIHRocmVlIHllYXJzCgpoYWxsb3dlZW5fY2FuZGllcyAlPiUKICBkcm9wX25hKHJhdGluZ3MpJT4lCiAgc3VtbWFyaXNlKGNhbmR5X3JhdGluZ3MgPSBuKCkpCiAgCiAgCmBgYAoKClEyCgpgYGB7cn0KIyBXaGF0IHdhcyB0aGUgYXZlcmFnZSBhZ2Ugb2YgcGVvcGxlIHdobyBhcmUgZ29pbmcgb3V0IHRyaWNrIG9yIHRyZWF0aW5nIGFuZCB0aGUgYXZlcmFnZSBhZ2Ugb2YgcGVvcGxlIDMuIG5vdCBnb2luZyB0cmljayBvciB0cmVhdGluZz8KCmhhbGxvd2Vlbl9jYW5kaWVzICU+JQogICBncm91cF9ieShnb2luZ19vdXQpICU+JQogICBzdW1tYXJpc2UoYXZnX2FnZSA9IG1lYW4oYWdlLCBuYS5ybSA9IFRSVUUpKQoKCgpgYGAKClEzCgoKCmBgYHtyfQojIEZvciBlYWNoIG9mIGpveSwgZGVzcGFpciBhbmQgbWVoLCB3aGljaCBjYW5keSBiYXIgcmV2aXZlZCB0aGUgbW9zdCBvZiB0aGVzZSByYXRpbmdzPwoKICAKaGFsbG93ZWVuX2NhbmRpZXMgJT4lCiAgZHJvcF9uYShyYXRpbmdzKSAlPiUKICBncm91cF9ieShyYXRpbmdzLCBjYW5kaWVzKSAlPiUKICBzdW1tYXJpc2UoY2FuZHlfcmF0aW5ncyA9IG4oKSkgJT4lCiAgZmlsdGVyKGNhbmR5X3JhdGluZ3MgPT0gbWF4KGNhbmR5X3JhdGluZ3MpKQogIAoKYGBgCgoKUTQKCmBgYHtyfQojIEhvdyBtYW55IHBlb3BsZSByYXRlZCBTdGFyYnVyc3QgYXMgZGVzcGFpcgoKaGFsbG93ZWVuX2NhbmRpZXMgJT4lCiAgZHJvcF9uYShyYXRpbmdzKSAlPiUKICBncm91cF9ieShjYW5kaWVzLCByYXRpbmdzKSAlPiUKICBmaWx0ZXIoY2FuZGllcyA9PSAnc3RhcmJ1cnN0JyAmIHJhdGluZ3MgPT0gJ2Rlc3BhaXInKSAlPiUKICBzdW1tYXJpc2Uoc3RhcmJ1cnN0X3JhdGluZ3MgPSBuKCkpCiAgCiAgCgpgYGAKCkZvciB0aGUgbmV4dCB0d28gcXVlc3Rpb25zLCBjb3VudCBkZXNwYWlyIGFzIC0xLCBqb3kgYXMgKzEgYW5kIG1laCBhcyAwLgoKYGBge3J9CmhhbGxvd2Vlbl9jYW5kaWVzIDwtCiAgaGFsbG93ZWVuX2NhbmRpZXMgJT4lCiAgbXV0YXRlKHJhdGluZ3NfbnVtZXJpYyA9IHJlY29kZShyYXRpbmdzLCBqb3kgPSAxLCBkZXNwYWlyID0gLTEsIG1laCA9IDApKQoKYGBgCgoKUTUKCmBgYHtyfQojIFdoYXQgd2FzIHRoZSBtb3N0IHBvcHVsYXIgY2FuZHkgYmFyIGJ5IHRoaXMgcmF0aW5nIHN5c3RlbSBmb3IgZWFjaCBnZW5kZXIgaW4gdGhlIGRhdGFzZXQ/CgpoYWxsb3dlZW5fY2FuZGllcyAlPiUKICBncm91cF9ieShnZW5kZXIsIGNhbmRpZXMpICU+JQogIHN1bW1hcmlzZShhdmdfcmF0aW5nID0gbWVhbihyYXRpbmdzX251bWVyaWMsIG5hLnJtID0gVFJVRSkpICU+JQogIGZpbHRlcihhdmdfcmF0aW5nID09IG1heChhdmdfcmF0aW5nKSkKCgoKYGBgCgpRNgoKYGBge3J9CgojIFdoYXQgd2FzIHRoZSBtb3N0IHBvcHVsYXIgY2FuZHkgYmFyIGluIGVhY2ggeWVhcgoKaGFsbG93ZWVuX2NhbmRpZXMgJT4lCmdyb3VwX2J5KHllYXIsIGNhbmRpZXMpICU+JQpzdW1tYXJpc2UoYXZnX3JhdGluZyA9IG1lYW4ocmF0aW5nc19udW1lcmljLCBuYS5ybSA9IFRSVUUpKSAlPiUKZmlsdGVyKGF2Z19yYXRpbmcgPT0gbWF4KGF2Z19yYXRpbmcpKQogCgoKCmBgYAoKUTcgCgpgYGB7cn0KIyBXaGF0IHdhcyB0aGUgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBieSB0aGlzIHJhdGluZyBmb3IgcGVvcGxlIGluIFVTLCBDYW5hZGEsIFVLIGFuZCBhbGwgb3RoZXIgY291bnRyaWVzCgpoYWxsb3dlZW5fY2FuZGllcyAlPiUKbXV0YXRlKGNvdW50cnkgPSBpZl9lbHNlKGNvdW50cnkgJWluJSBjKCJ1c2EiLCAiY2FuYWRhIiwgInVrIiksIGNvdW50cnksICJvdGhlciIpKSAlPiUKZmlsdGVyKHllYXIgIT0gMjAxNSkgJT4lCmdyb3VwX2J5KGNvdW50cnksIGNhbmRpZXMpICU+JQpzdW1tYXJpc2UoYXZnX3JhdGluZyA9IG1lYW4ocmF0aW5nc19udW1lcmljLCBuYS5ybSA9IFRSVUUpKSAlPiUKZmlsdGVyKGF2Z19yYXRpbmcgPT0gbWF4KGF2Z19yYXRpbmcpKQoKCmBgYAoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiSGFsbG93ZWVuIGNhbmR5IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgojIFRhc2sgNCAtIEhhbGxvd2VlbiBDYW5keSBEYXRhCgojIFRoZSBkYXRhIGlzIGluIGNsZWFuIGZvcm10IG5vdyB3ZSBjYW4gdXNlIGl0IHRvIGFuYW5seXNlIAoKCmBgYHtyfQoKbGlicmFyeSh0aWR5dmVyc2UpCmxpYnJhcnkoZHBseXIpCmxpYnJhcnkoc3RyaW5ncikKbGlicmFyeShyZWFkcikKbGlicmFyeShoZXJlKQoKYGBgCgoKCmBgYHtyfQojIExvYWQgZGF0YSBmcm9tIGZpcnN0IGNzdiBmaWxlIAoKaGFsbG93ZWVuX2NhbmRpZXMgPC0gCiAgcmVhZF9jc3YoaGVyZSgiY2xlYW5fZGF0YS9oYWxsb3dlZW5fY2FuZGllcy5jc3YiKSwgZ3Vlc3NfbWF4ID0gMTAwMDAwMSkKCgoKYGBgCgoKCgoxLjQuMiBBbmFseXNpcyBxdWVzdGlvbnMKClExCgpgYGB7cn0KIyBjYW5keSByYXRpbmdzIGdpdmVuIGFjcm9zcyB0aGUgdGhyZWUgeWVhcnMKCmhhbGxvd2Vlbl9jYW5kaWVzICU+JQogIGRyb3BfbmEocmF0aW5ncyklPiUKICBzdW1tYXJpc2UoY2FuZHlfcmF0aW5ncyA9IG4oKSkKICAKICAKYGBgCgoKUTIKCmBgYHtyfQojIGF2ZXJhZ2UgYWdlIG9mIHBlb3BsZSB3aG8gYXJlIGdvaW5nIG91dCB0cmljayBvciB0cmVhdGluZyBhbmQgdGhlIGF2ZXJhZ2UgYWdlIG9mIHBlb3BsZSAzLiBub3QgZ29pbmcgdHJpY2sgb3IgdHJlYXRpbmc/CgpoYWxsb3dlZW5fY2FuZGllcyAlPiUKICAgZ3JvdXBfYnkoZ29pbmdfb3V0KSAlPiUKICAgc3VtbWFyaXNlKGF2Z19hZ2UgPSBtZWFuKGFnZSwgbmEucm0gPSBUUlVFKSkKCgoKYGBgCgpRMwoKCgpgYGB7cn0KIyBjYW5keSBiYXIgcmV2aXZlZCB0aGUgbW9zdCBvZiB0aGVzZSByYXRpbmdzIGVhY2ggb2Ygam95LCBkZXNwYWlyIGFuZCBtZWgsCgogIApoYWxsb3dlZW5fY2FuZGllcyAlPiUKICBkcm9wX25hKHJhdGluZ3MpICU+JQogIGdyb3VwX2J5KHJhdGluZ3MsIGNhbmRpZXMpICU+JQogIHN1bW1hcmlzZShjYW5keV9yYXRpbmdzID0gbigpKSAlPiUKICBmaWx0ZXIoY2FuZHlfcmF0aW5ncyA9PSBtYXgoY2FuZHlfcmF0aW5ncykpCiAgCgpgYGAKCgpRNAoKYGBge3J9CiMgIHBlb3BsZSByYXRlZCBTdGFyYnVyc3QgYXMgZGVzcGFpcgoKaGFsbG93ZWVuX2NhbmRpZXMgJT4lCiAgZHJvcF9uYShyYXRpbmdzKSAlPiUKICBncm91cF9ieShjYW5kaWVzLCByYXRpbmdzKSAlPiUKICBmaWx0ZXIoY2FuZGllcyA9PSAnc3RhcmJ1cnN0JyAmIHJhdGluZ3MgPT0gJ2Rlc3BhaXInKSAlPiUKICBzdW1tYXJpc2Uoc3RhcmJ1cnN0X3JhdGluZ3MgPSBuKCkpCiAgCiAgCgpgYGAKCkZvciB0aGUgbmV4dCB0d28gcXVlc3Rpb25zLCBjb3VudCBkZXNwYWlyIGFzIC0xLCBqb3kgYXMgKzEgYW5kIG1laCBhcyAwLgoKYGBge3J9CmhhbGxvd2Vlbl9jYW5kaWVzIDwtCiAgaGFsbG93ZWVuX2NhbmRpZXMgJT4lCiAgbXV0YXRlKHJhdGluZ3NfbnVtZXJpYyA9IHJlY29kZShyYXRpbmdzLCBqb3kgPSAxLCBkZXNwYWlyID0gLTEsIG1laCA9IDApKQoKYGBgCgoKUTUKCmBgYHtyfQojIG1vc3QgcG9wdWxhciBjYW5keSBiYXIgYnkgdGhpcyByYXRpbmcgc3lzdGVtIGZvciBlYWNoIGdlbmRlciBpbiB0aGUgZGF0YXNldD8KCmhhbGxvd2Vlbl9jYW5kaWVzICU+JQogIGdyb3VwX2J5KGdlbmRlciwgY2FuZGllcykgJT4lCiAgc3VtbWFyaXNlKGF2Z19yYXRpbmcgPSBtZWFuKHJhdGluZ3NfbnVtZXJpYywgbmEucm0gPSBUUlVFKSkgJT4lCiAgZmlsdGVyKGF2Z19yYXRpbmcgPT0gbWF4KGF2Z19yYXRpbmcpKQoKCgpgYGAKClE2CgpgYGB7cn0KCiMgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBpbiBlYWNoIHllYXIKCmhhbGxvd2Vlbl9jYW5kaWVzICU+JQpncm91cF9ieSh5ZWFyLCBjYW5kaWVzKSAlPiUKc3VtbWFyaXNlKGF2Z19yYXRpbmcgPSBtZWFuKHJhdGluZ3NfbnVtZXJpYywgbmEucm0gPSBUUlVFKSkgJT4lCmZpbHRlcihhdmdfcmF0aW5nID09IG1heChhdmdfcmF0aW5nKSkKIAoKCgpgYGAKClE3IAoKYGBge3J9CiMgbW9zdCBwb3B1bGFyIGNhbmR5IGJhciBieSB0aGlzIHJhdGluZyBmb3IgcGVvcGxlIGluIFVTLCBDYW5hZGEsIFVLIGFuZCBhbGwgb3RoZXIgY291bnRyaWVzCgpoYWxsb3dlZW5fY2FuZGllcyAlPiUKbXV0YXRlKGNvdW50cnkgPSBpZl9lbHNlKGNvdW50cnkgJWluJSBjKCJ1c2EiLCAiY2FuYWRhIiwgInVrIiksIGNvdW50cnksICJvdGhlciIpKSAlPiUKZmlsdGVyKHllYXIgIT0gMjAxNSkgJT4lCmdyb3VwX2J5KGNvdW50cnksIGNhbmRpZXMpICU+JQpzdW1tYXJpc2UoYXZnX3JhdGluZyA9IG1lYW4ocmF0aW5nc19udW1lcmljLCBuYS5ybSA9IFRSVUUpKSAlPiUKZmlsdGVyKGF2Z19yYXRpbmcgPT0gbWF4KGF2Z19yYXRpbmcpKQoKCmBgYAoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCg==</div>
 
 
 

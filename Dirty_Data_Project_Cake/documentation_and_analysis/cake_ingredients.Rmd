@@ -29,14 +29,10 @@ cake_ingredients <- read_csv(here("clean_data/cake_ingredients_clean.csv"))
  names(cake_ingredients)
 ```
 
-
-1.2.2 Analysis questions
-
-
-
+Analysis
 
 ```{r}
-# Which cake has the most cocoa in it?
+# cake with most cocoa
 
 cake_ingredients %>%
   filter(ingredient == "cocoa") %>%
@@ -51,7 +47,7 @@ cake_ingredients %>%
 
 ```{r}
 
-# For sponge cake, how many cups of ingredients are used in total?
+# Ingredients are used in sponge cake  
 
 cake_ingredients %>%
   filter(cake == "sponge") %>%
@@ -65,7 +61,7 @@ cake_ingredients %>%
 
 ```{r}
 
-# How many ingredients are measured in teaspoons?
+# Ingredients are measured in teaspoons
 
 cake_ingredients %>%
   filter(measure == "teaspoon") %>%
@@ -83,7 +79,7 @@ cake_ingredients %>%
 
 ```{r}
 
-# Which cake has the most unique ingredients?
+# unique ingredients?
 
 cake_ingredients %>%
   group_by(cake) %>%
@@ -97,7 +93,7 @@ cake_ingredients %>%
 
 
 ```{r}
-# Which ingredients are used only once?
+# ingredients are used only once
 
 cake_ingredients %>%
   group_by(ingredient) %>%

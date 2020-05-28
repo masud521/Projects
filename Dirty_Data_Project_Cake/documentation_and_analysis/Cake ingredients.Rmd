@@ -58,7 +58,7 @@ cake_ingredients
 
 ```{r}
 
-# 1. Which cake has the most cocoa in it?
+# Cake with most cocoa in it?
 
 cake_ingredients %>%
   filter(ingredient == "cocoa") %>%
@@ -72,7 +72,7 @@ cake_ingredients %>%
 
 ```{r}
 
-# 2. For sponge cake, how many cups of ingredients are used in total?
+# Ingredients are used in sponge cake 
 
 cake_ingredients %>%
   filter(cake == "sponge") %>%
@@ -87,7 +87,7 @@ cake_ingredients %>%
 ```{r}
 
 
-# 3. How many ingredients are measured in teaspoons?
+#Ingredients are measured in teaspoons
 
 cake_ingredients %>%
   filter(measure == "teaspoon") %>%
@@ -100,7 +100,7 @@ cake_ingredients %>%
 
 ```{r}
 
-# 4. Which cake has the most unique ingredients?
+# unique ingredients
 
 cake_ingredients %>%
   group_by(cake) %>%
@@ -115,7 +115,7 @@ cake_ingredients %>%
 ```{r}
 
 
-# 5. Which ingredients are used only once?
+# Ingredients are used only once
 
 cake_ingredients %>%
   group_by(ingredient) %>%

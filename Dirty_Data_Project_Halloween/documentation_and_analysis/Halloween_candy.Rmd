@@ -38,7 +38,7 @@ halloween_candies <-
 Q1
 
 ```{r}
-# What is the total number of candy ratings given across the three years
+# candy ratings given across the three years
 
 halloween_candies %>%
   drop_na(ratings)%>%
@@ -51,7 +51,7 @@ halloween_candies %>%
 Q2
 
 ```{r}
-# What was the average age of people who are going out trick or treating and the average age of people 3. not going trick or treating?
+# average age of people who are going out trick or treating and the average age of people 3. not going trick or treating?
 
 halloween_candies %>%
    group_by(going_out) %>%
@@ -66,7 +66,7 @@ Q3
 
 
 ```{r}
-# For each of joy, despair and meh, which candy bar revived the most of these ratings?
+# candy bar revived the most of these ratings each of joy, despair and meh,
 
   
 halloween_candies %>%
@@ -82,7 +82,7 @@ halloween_candies %>%
 Q4
 
 ```{r}
-# How many people rated Starburst as despair
+#  people rated Starburst as despair
 
 halloween_candies %>%
   drop_na(ratings) %>%
@@ -107,7 +107,7 @@ halloween_candies <-
 Q5
 
 ```{r}
-# What was the most popular candy bar by this rating system for each gender in the dataset?
+# most popular candy bar by this rating system for each gender in the dataset?
 
 halloween_candies %>%
   group_by(gender, candies) %>%
@@ -122,7 +122,7 @@ Q6
 
 ```{r}
 
-# What was the most popular candy bar in each year
+# most popular candy bar in each year
 
 halloween_candies %>%
 group_by(year, candies) %>%
@@ -137,7 +137,7 @@ filter(avg_rating == max(avg_rating))
 Q7 
 
 ```{r}
-# What was the most popular candy bar by this rating for people in US, Canada, UK and all other countries
+# most popular candy bar by this rating for people in US, Canada, UK and all other countries
 
 halloween_candies %>%
 mutate(country = if_else(country %in% c("usa", "canada", "uk"), country, "other")) %>%
